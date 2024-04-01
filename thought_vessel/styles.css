@@ -1,0 +1,114 @@
+#rules-container {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #fdf1dc;
+
+.rules-data {
+  margin: 2em;
+  max-width: 50em;
+}
+
+a {
+  color: #004d76;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+div {
+
+  --title-color: #822101;
+  --text-color: black;
+  --subtext-color: #666;
+
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.03em;
+
+  [class^='container-'] {
+    margin-bottom: 1em;
+  }
+
+  .line-preamble {
+    margin-bottom: 1em;
+  }
+
+  #preamble-0 {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+  .toc-level-0 {
+    margin-top: 0.5em
+  }
+
+  .toc-level-1 {
+    margin-left: 1em
+  }
+
+  .line-rule {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .rule-text {
+    width: 90%;
+  }
+
+  .rule-id {
+    width: 10%;
+    color: var(--subtext-color);
+    padding-right: 1em;
+    font-family: times new roman,serif;
+  }
+
+  .example {
+    width: 90%;
+  }
+
+  .rule-level-0 {
+    margin-top: 7em;
+    margin-bottom: -1.5em;
+    align-items: flex-end;
+    border-bottom: 2px var(--text-color) solid;
+  }
+
+  .rule-level-0 > .rule-text {
+    font-size: 2.2em;
+    font-weight: 500;
+    color: var(--title-color);
+    font-family: times new roman,serif;
+  }
+
+  .rule-level-0 > .rule-id {
+    font-size: 2em;
+    margin-bottom: 0.1em;
+    color: var(--text-color);
+  }
+
+  .rule-level-1 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    padding-bottom: 0.1em;
+    border-bottom: 1px var(--text-color) solid;
+  }
+
+  .rule-level-1 > .rule-text {
+    font-size: 1.8em;
+    color: var(--title-color);
+    font-family: times new roman,serif;
+    font-variant: small-caps;
+    font-weight: 500;
+  }
+
+  .rule-level-1 > .rule-id {
+    align-self: flex-end;
+    margin-bottom: 0.3em;
+  }
+
+}
